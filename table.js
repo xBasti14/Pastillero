@@ -47,7 +47,7 @@ function rellenarArray(data, arr){
                     <img src=${remedio.image} width="62px" height="62px">
                 </td>
                 <td class="izq">
-                    <h1>${remedio.name}</h1>
+                    <h1 class="remedioname">${remedio.name}</h1>
                     <p>${remedio.concentration}</p>
                     <p>
                         <a href='#'>

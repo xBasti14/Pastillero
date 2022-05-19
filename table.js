@@ -1,12 +1,15 @@
-function calculate(remedio, details, previous_date, current_date){
+function add(remedio, details){
     if(remedio.id == details['product_id']){
         remedio.quantity+=details['quantity'];
-        if(previous_date!=null){
-            let days = Math.round((current_date-previous_date)/ (1000*60*60*24));
-            let pastillas_consumidas = days*remedio.frequency;
-            remedio.quantity-=pastillas_consumidas;
-            if(remedio.quantity<0) remedio.quantity=0;
-        }
+    }
+}
+
+function discount(remedio, previous_date, current_date){
+    if(previous_date!=null){
+        let days = Math.round((current_date-previous_date)/ (1000*60*60*24));
+        let pastillas_consumidas = days*remedio.frequency;
+        remedio.quantity-=pastillas_consumidas;
+        if(remedio.quantity<0) remedio.quantity=0;
     }
 }
 
@@ -30,8 +33,9 @@ function rellenarArray(data, arr){
     for(let purchase of data['payload']){
         current_date = new Date(purchase["received_date"]);
         for(let details of purchase['details']){
-            arr.forEach(remedio => calculate(remedio, details, previous_date, current_date));
+            arr.forEach(remedio => add(remedio, details, previous_date, current_date));
         }
+        arr.forEach(remedio => discount(remedio, previous_date, current_date));
         previous_date = current_date;
         current_date = null;
     }

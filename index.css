@@ -1,0 +1,76 @@
+.bar, .inter, .line, .table{
+    width: 100%;
+}
+
+.rev{
+    width: 192px;
+    height: 29px;
+
+    position: relative;
+    left: 90px;
+    top: 10px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 22px;
+
+    text-align: center;
+    letter-spacing: 0.15px;
+}
+
+.inter{
+    text-align:center;
+    width:360px;
+}
+
+.frase{
+
+    width: 320px;
+    height: 24px;
+    
+    position: relative;
+    left: 22px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+}
+
+.line{
+    padding: 2px;
+
+    width: 360px;
+    height: 40px;
+
+    
+    background: #F5F5F5;
+}
+
+.text{
+    position: absolute;
+    width: 92px;
+    height: 29px;
+    left: 16px;
+    top: -5px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 19px;
+    line-height: 28px;
+    /* identical to box height */
+    
+    letter-spacing: 0.15px;
+    
+    color: #414046;
+}
+
+.table{
+    height: 600px;
+}
+
+.line, .inter, .divtable{
+    position: relative;
+    top:-50px;
+}

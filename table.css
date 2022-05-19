@@ -1,0 +1,28 @@
+.icono {
+    color: black;
+    font-size: 30px;
+}
+
+table {
+    width: 360px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-family: Arial;
+    color: #2d3436;
+  }
+
+th, td {
+    text-align: center;
+    vertical-align: center;
+    border-bottom: 1px solid black;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+ }
+
+ .izq {
+    text-align: left;
+ }

@@ -1,0 +1,44 @@
+.barra{
+    position: absolute;
+    width: 360px;
+    height: 64px;
+    left: 0px;
+    top: 0px;
+    
+    background: #0277BD;
+}
+
+.title {
+    font-size: 1.5em;
+    position: relative;
+    left: 12%;
+    height: 29px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+}
+
+.button {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top:35%;
+    width: 48px;
+    height: 48px;
+}
+
+.button.bars {
+    left:5%;
+}
+
+.button.lupa {
+    left: 80%;
+}
+
+.button.shopping {
+    left: 90%;
+}
